@@ -255,7 +255,7 @@ form input, form textarea{
     background-color: #0e0e1a;
     margin-left: 25px;
     object-fit: contain;
-
+    transition: transform 0.3s;
 }
 
 .fird img,.secd img,.thid img{
@@ -264,5 +264,13 @@ form input, form textarea{
     border: 3px solid blue;
     height: 100%;
 }
+
+.fird:hover, .secd:hover, .thid:hover {
+    transform: scale(1.1);
+  }
+  
+  .fird:active, .secd:active, .thid:active {
+    transform: scale(0.9);
+  }
 
 
