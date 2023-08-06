@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ashish - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Ashish's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#firstsec">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="#Second">Skills</a></li>
+                    <li><a href="#projects">Porjects</a></li>
+                    <li><a href="#cont">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsec">
+            <div class="leftsec">Hi My name is<span class="purple"> Ashish</span>
+                <div>and i am a </div>
+                <span style="color: blueviolet;" id="element"></span>
+            </div>
+            <div class="rightsec">
+                <img src="./226675coc.jpg" alt="">
+            </div>
+        </section>
+        <hr>
+
+        <section data-index="1" id="Second" class="secondsec">
+            <h1>Skills</h1>
+            <div class="list1 hidden show" >
+                <div class="html">
+                    <h2>HTML</h2>
+                    <p>Lorem ipsum dolor sit amet consec</p>
+                </div>
+                <div class="css">
+                    <h2>CSS</h2>
+                </div>
+                <div class="Javascript">
+                    <h2>JAVASCRIPT</h2>
+                </div>
+            </div>
+            <div class="list2 hidden show">
+                <div class="dsa">
+                    <h2>DSA</h2>
+                </div>    
+                <div class="Python">
+                    <h2>PYTHON</h2>
+                    
+                </div>
+                <div class="MachineLearning">
+                    <h2>MACHINE LEARNING</h2>
+                </div>
+            
+            </div>
+        </section>
+        <hr>
+
+        <section id="projects" class="secondsec">
+            <h1>Projects</h1>
+            <section id="cont">
+                <div class="maind">
+                    <div class="fird">
+                        <a href="https://blue-chameleon-kit.cyclic.app/"><img src="./weatherp.png" alt=""><a href=""></a>
+                    </div>
+                    <div class="secd">
+                        <a href="https://ashishdochania.github.io/Drum-kit/" target="_blank"><img src="./drum.png" alt=""></a>
+                        
+                    </div>
+                    <div class="thid">
+                        <a href="https://ashishdochania.github.io/Simon-Game-Challenge/" target="_blank"><img src="./simon.png" alt=""></a>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section id="cont">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="bi bi-envelope-at"></i> dochania.1@iitj.ac.in</p>
+                        <p><i class="bi bi-telephone"></i> 7296853131</p>
+                        <div class="social-icons">
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-github"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button class="btn" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © Ashish Dochania</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['<i>Web</i> Developer', ' Programmer',],
+          typeSpeed: 60,
+          backSpeed:60,
+          backDelay:60,
+          loop: true
+        });
+    </script>
+</body>
+</html>
