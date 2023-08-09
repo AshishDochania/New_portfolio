@@ -17,7 +17,7 @@
             <div class="right">
                 <ul>
                     <li><a href="#firstsec">Home</a></li>
-                    <li><a href="/">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#Second">Skills</a></li>
                     <li><a href="#projects">Porjects</a></li>
                     <li><a href="#cont">Contact Me</a></li>
@@ -32,7 +32,21 @@
                 <span style="color: blueviolet;" id="element"></span>
             </div>
             <div class="rightsec">
-                <img src="./226675coc.jpg" alt="">
+                <div id="lottiAnime"></div>
+            </div>
+        </section>
+        <hr>
+
+        <section id="about" class="about">
+            <h1>About</h1>
+            <div class="aboutsec">
+                <div class="rightsec">
+                    <h2 class="about-text">As an aspiring <span class="purpleAgain">Software Engineer</span>, I am a dedicated engineering
+                         student with a keen interest in <span class="purpleAgain">Web Development</span>,<span class="purpleAgain"> Data Structures
+                          </span>and <span class="purpleAgain">Algorithms</span>. Through my proficiency in designing intuitive web
+                           interfaces and my enthusiasm for solving complex problems using 
+                           code, I have developed a strong foundation in software development.</h2>
+                </div>
             </div>
         </section>
         <hr>
@@ -41,26 +55,25 @@
             <h1>Skills</h1>
             <div class="list1 hidden show" >
                 <div class="html">
-                    <h2>HTML</h2>
-                    <p>Lorem ipsum dolor sit amet consec</p>
+                    <h2 class="words">HTML</h2>
                 </div>
                 <div class="css">
-                    <h2>CSS</h2>
+                    <h2 class="words">CSS</h2>
                 </div>
                 <div class="Javascript">
-                    <h2>JAVASCRIPT</h2>
+                    <h2 class="words">JAVASCRIPT</h2>
                 </div>
             </div>
             <div class="list2 hidden show">
                 <div class="dsa">
-                    <h2>DSA</h2>
+                    <h2 class="words">DSA</h2>
                 </div>    
                 <div class="Python">
-                    <h2>PYTHON</h2>
+                    <h2 class="words">PYTHON</h2>
                     
                 </div>
                 <div class="MachineLearning">
-                    <h2>MACHINE LEARNING</h2>
+                    <h2 class="words">MACHINE LEARNING</h2>
                 </div>
             
             </div>
@@ -75,7 +88,7 @@
                         <a href="https://blue-chameleon-kit.cyclic.app/"><img src="./weatherp.png" alt=""><a href=""></a>
                     </div>
                     <div class="secd">
-                        <a href="https://ashishdochania.github.io/Drum-kit/" target="_blank"><img src="./drum.png" alt=""></a>
+                        <a href="https://ashishdochania.github.io/Expense_Tracker/" target="_blank"><img src="./expense.png" alt=""></a>
                         
                     </div>
                     <div class="thid">
@@ -115,15 +128,33 @@
         </section>
     </footer>
 
+    <!-- Include the Lottie library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
+
+
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-          strings: ['<i>Web</i> Developer', ' Programmer',],
+          strings: ['Engineer','<i>Web</i> Developer', ' Programmer'],
           typeSpeed: 60,
           backSpeed:60,
           backDelay:60,
           loop: true
         });
     </script>
+
+    <script>
+        // Load and initialize the Lottie animation
+        const animationContainer = document.getElementById('lottiAnime');
+        const animationOptions = {
+          container: animationContainer,
+          renderer: 'svg', // Use 'svg' or 'canvas'
+          loop: true,
+          autoplay: true,
+          path: './animation_ll27iknn.json', // Replace with your animation JSON file path
+        };
+        const animation = lottie.loadAnimation(animationOptions);
+    </script>
+
 </body>
 </html>
