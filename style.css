@@ -23,7 +23,7 @@ nav{
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 100;
 }
 
 nav ul{
@@ -389,7 +389,7 @@ form input, form textarea{
     nav ul{
         position: fixed;
         left:100%;
-        top:68px;
+        top: 67px;
         height: 100vh;
         gap:40px;
         flex-direction: column;
@@ -401,8 +401,11 @@ form input, form textarea{
     }
 
     nav ul li{
-        margin: 0px 0;
+        margin-bottom: 20px;
         font-size: 2rem;
+    }
+    nav ul .tl{
+        margin-bottom: 10%;
     }
 
     nav ul.active{
@@ -410,12 +413,21 @@ form input, form textarea{
         backdrop-filter: blur(10px);
         background-color: rgba(0, 0, 0, 0.5);
     }
+
+    nav ul li a:hover{
+        text-decoration: none;
+        font-size: 2.2rem;
+        color: rgb(79, 79, 184);
+    }
     
 }
 
 @media(max-width:470px){
     .leftsec{
         font-size: 2rem;
+    }
+    nav ul .tl{
+        margin-bottom: 20%;
     }
 
 }
