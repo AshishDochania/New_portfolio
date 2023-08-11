@@ -47,6 +47,21 @@ nav ul li a:hover{
     color: rgb(79, 79, 184);
 }
 
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    /* -webkit-animation: all 0.3s ease-in-out; */
+    transition: all 0.3s ease-in-out;
+    background-color: whitesmoke;
+}
+
 /* --------------main------------- */
 
 #lottiAnime{
@@ -321,8 +336,8 @@ form input, form textarea{
 
 @media(max-width:900px){
     nav{
-        flex-direction: column;
-        justify-content: center;
+        /* flex-direction: column; */
+        justify-content:space-around
     }
     .firstsec{
         flex-direction: column-reverse;
@@ -357,6 +372,46 @@ form input, form textarea{
     .fird,.secd,.thid{
         margin-bottom: 5%;
     }
+    .hamburger{
+        display: block;
+        
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
 
+    nav ul{
+        position: fixed;
+        left:100%;
+        top:68px;
+        height: 100vh;
+        gap:0;
+        flex-direction: column;
+        background-color: rgb(0, 0, 33);
+        opacity: 0.8;
+        width: 100%;
+        text-align:center;
+        transition: 0.3s;
+    }
+
+    nav ul li{
+        margin: 16px 0;
+    }
+
+    nav ul.active{
+        left:0%;
+    }
 }
 
+@media(max-width:470px){
+    .leftsec{
+        font-size: 2rem;
+    }
+
+}
