@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: rgb(0, 0, 33);
     color: white;
@@ -175,7 +179,7 @@ main hr{
     /* box-shadow: blue 5px 5px; */
     width: 13%;
     text-align:center;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.4s, box-shadow 0.2s;
 }
 
 .html:hover,.css:hover,.Python:hover,.Javascript:hover,.dsa:hover,.MachineLearning:hover{
@@ -301,7 +305,7 @@ form input, form textarea{
 }
 
 
-/* ---------prokjects----- */
+/* ---------projects----- */
 
 .maind{
     display:flex;
@@ -313,7 +317,7 @@ form input, form textarea{
     background-color: #0e0e1a;
     margin-left: 25px;
     object-fit: contain;
-    transition: transform 0.3s;
+    transition: transform 0.7s;
 }
 
 .fird img,.secd img,.thid img{

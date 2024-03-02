@@ -14,3 +14,15 @@ document.querySelectorAll("nav ul a").forEach(n => {
         navMenu.classList.remove("active");
     });
 });
+
+var templateParams = {
+    name: 'James',
+    notes: 'Check this out!'
+};
+ 
+emailjs.send('service_gn3jow4', 'template_32rtaz6', templateParams)
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
